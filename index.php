@@ -45,7 +45,7 @@
     try {
         $name = $_POST['name'];
         $email = $_POST['email'];
-		$email = $_POST['company'];
+		$company = $_POST['company'];
         $date = date("Y-m-d");
         // Insert data
         $sql_insert = "INSERT INTO registration_tbl (name, email, company, date) 
@@ -54,7 +54,7 @@
         $stmt->bindValue(1, $name);
         $stmt->bindValue(2, $email);
 		$stmt->bindValue(3, $company);
-        $stmt->bindValue(3, $date);
+        $stmt->bindValue(4, $date);
         $stmt->execute();
     }
     catch(Exception $e) {
