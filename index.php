@@ -21,7 +21,7 @@
 <form method="post" action="index.php" enctype="multipart/form-data" >
       Name  <input type="text" name="name" id="name"/></br>
       Email <input type="text" name="email" id="email"/></br>
-	  Company Name <input type"text" name="company" id="company"/></br>
+	  Company <input type"text" name="company" id="company"/></br>
       <input type="submit" name="submit" value="Submit" />
 </form>
 <?php
@@ -71,7 +71,7 @@
         echo "<table>";
         echo "<tr><th>Name</th>";
         echo "<th>Email</th>";
-		echo "<th>Company Name</th>";
+		echo "<th>Company</th>";
         echo "<th>Date</th></tr>";
         foreach($registrants as $registrant) {
             echo "<tr><td>".$registrant['name']."</td>";
