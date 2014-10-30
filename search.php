@@ -45,7 +45,7 @@
 					$stmt->execute();
 					
 					if($stmt->rowCount() > 0) {
-						echo "<h2>Registrants matching query:</h2>";
+						echo "<h2>Results:</h2>";
 						echo "<table>";
 						echo "<tr><th>Name</th>";
 						echo "<th>Email</th>";
@@ -60,7 +60,7 @@
 						echo "</table>";
 					}
 					else {
-						echo "<h3>No one matched your query.</h3>";
+						echo "<h3>This person has not registered.</h3>";
 					}
 				}
 				catch(Exception $e) {
