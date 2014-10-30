@@ -15,7 +15,7 @@
 
 <?php  // Get the search variable from URL
 if(!isset($_GET['search']))
-die(“Not found”);$var = $_GET['search'];
+die(“Not found”);$var = $_GET['submit'];
 $trimmed = trim($var); //trim whitespace from the stored variable
 // rows to return
 $limit=10;
