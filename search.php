@@ -5,7 +5,7 @@ $db_password = '2e13d16d';
 $db_database = 'danyaalAOKafhgnx';
 
 // Database Connection String
-$con = mysql_connect($db_hostname,$db_username,$db_password);
+$con = mysqli_connect($db_hostname,$db_username,$db_password);
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
